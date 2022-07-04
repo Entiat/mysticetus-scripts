@@ -40,6 +40,14 @@ Currently, the following functions are available for scripts (access to entry sh
 	public static class Data
 	{
 		/// <summary>
+		/// Gets whether or not a field in a sheet exists
+		/// </summary>
+		/// <param name="sheet"></param>
+		/// <param name="field"></param>
+		/// <returns>True if sheet exists and contains field named 'field'.</returns>
+		public static bool FieldExists(string sheet, string field);
+
+		/// <summary>
 		/// Retrieves data from a field. 
 		/// </summary>
 		/// <param name="sheet">Sheet to access</param>
@@ -49,26 +57,26 @@ Currently, the following functions are available for scripts (access to entry sh
 		public static object? GetData(string sheet, Guid rowId, string field);
 
 		/// <summary>
-		/// Gets whether or not a data sheet exists
-		/// </summary>
-		/// <param name="sheet">Sheet name</param>
-		/// <returns>True if it exists, false if not.</returns>
-		public static bool SheetExists(string sheet);
-
-		/// <summary>
-		/// Gets whether or not a field in a sheet exists
-		/// </summary>
-		/// <param name="sheet"></param>
-		/// <param name="field"></param>
-		/// <returns>True if sheet exists and contains field named 'field'.</returns>
-		public static bool FieldExists(string sheet, string field);
-
-		/// <summary>
 		/// Retrieves the list of row ids in the given sheet.
 		/// </summary>
 		/// <param name="sheet">Sheet name</param>
 		/// <returns>RowIds of this sheet, or empty list on error.</returns>
 		public static List<Guid> GetRowIds(string sheet);
+		
+		/// <summary>
+		/// Gets whether or not a data sheet exists
+		/// </summary>
+		/// <param name="sheet">Sheet name</param>
+		/// <returns>True if it exists, false if not.</returns>
+		public static bool SheetExists(string sheet);
+		
+		/// <summary>
+		/// Attempts to convert an object into a unix time (seconds since Jan 1, 1970). Will be negative if before 1970.
+		/// Doubles are returned as-is. Ints are converted to double. Strings are parsed. Anything else returns double.NaN.
+		/// </summary>
+		/// <param name="time">Value to convert.</param>
+		/// <returns>Seconds since Jan 1, 1970, or double.NaN if unable to parse.</returns>
+		public static double ToTime(object? time);
 	}
 
 	/// <summary>

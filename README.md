@@ -77,13 +77,19 @@ Currently, the following functions are available for scripts (access to entry sh
 	public static class Watchdogs
 	{
 		/// <summary>
-		/// Clears the watchdog status for this named watchdog
+		/// Removes the watchdog status for this named watchdog
 		/// </summary>
 		/// <param name="watchdogName">Name of watchdog</param>
-		/// <param name="watchdogDescription">Description of this watchdog</param>
-		public static void Clear(string watchdogName, string watchdogDescription);
+		public static void Clear(string watchdogName);
 
 		/// <summary>
+		/// Sets the named watchdog status to OK.
+		/// </summary>
+		/// <param name="watchdogName"></param>
+		/// <param name="watchdogDescription"></param>
+		public static void SetOk(string watchdogName, string watchdogDescription);
+
+                /// <summary>
 		/// Sets Watchdog to a "Concern" state about data in an entry sheet.
 		/// </summary>
 		/// <param name="watchdogName">Name of watchdog</param>

@@ -30,3 +30,64 @@ Do put the year and copyright holder in there. DO NOT put identifiable info (ema
     // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
     // SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     //
+
+# Script Support
+Currently, the following functions are available for scripts (access to entry sheet data, and watchdog firing/clearing). We will be adding (much!) more functionality over time. Let us know what features you'd like to have access to or if we can improve the current API in any way.
+
+	/// <summary>
+	/// Script support for Data items.
+	/// </summary>
+	public static class Data
+	{
+		/// <summary>
+		/// Retrieves data from a field. 
+		/// </summary>
+		/// <param name="sheet">Sheet to access</param>
+		/// <param name="row">Row number to access.</param>
+		/// <param name="field">Field name to retrieve</param>
+		/// <returns>Data, or null on error (or empty field)</returns>
+		public static object? GetData(string sheet, Guid rowId, string field);
+
+		/// <summary>
+		/// Gets whether or not a data sheet exists
+		/// </summary>
+		/// <param name="sheet">Sheet name</param>
+		/// <returns>True if it exists, false if not.</returns>
+		public static bool SheetExists(string sheet);
+
+		/// <summary>
+		/// Gets whether or not a field in a sheet exists
+		/// </summary>
+		/// <param name="sheet"></param>
+		/// <param name="field"></param>
+		/// <returns>True if sheet exists and contains field named 'field'.</returns>
+		public static bool FieldExists(string sheet, string field);
+
+		/// <summary>
+		/// Retrieves the list of row ids in the given sheet.
+		/// </summary>
+		/// <param name="sheet">Sheet name</param>
+		/// <returns>RowIds of this sheet, or empty list on error.</returns>
+		public static List<Guid> GetRowIds(string sheet);
+	}
+
+	/// <summary>
+	/// Script support for watchdogs.
+	/// </summary>
+	public static class Watchdogs
+	{
+		/// <summary>
+		/// Clears the watchdog status for this named watchdog
+		/// </summary>
+		/// <param name="watchdogName">Name of watchdog</param>
+		/// <param name="watchdogDescription">Description of this watchdog</param>
+		public static void Clear(string watchdogName, string watchdogDescription);
+
+		/// <summary>
+		/// Sets Watchdog to a "Concern" state about data in an entry sheet.
+		/// </summary>
+		/// <param name="watchdogName">Name of watchdog</param>
+		/// <param name="watchdogDescription">Description of this watchdog</param>
+		/// <param name="error">Error text displayed to user when they click on Concern</param>
+		public static void BarkAtSheetData(string watchdogName, string watchdogDescription, string error, string sheet, Guid rowId, string field);
+	}

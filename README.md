@@ -43,8 +43,8 @@ Currently, the following functions are available for scripts (access to entry sh
 		/// <summary>
 		/// Gets whether or not a field in a sheet exists
 		/// </summary>
-		/// <param name="sheet"></param>
-		/// <param name="field"></param>
+		/// <param name="sheet">Sheet to look for.</param>
+		/// <param name="field">Field in the sheet to look for.</param>
 		/// <returns>True if sheet exists and contains field named 'field'.</returns>
 		public static bool FieldExists(string sheet, string field);
 

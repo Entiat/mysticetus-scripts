@@ -20,7 +20,8 @@
 // =======================================
 //
 // This script runs as a watchdog to check that the value in one time field (Time at CPA to Active Source) 
-// is between two other time fields (Time at first detection, Time at last detection).
+// is between two other time fields (Time at first detection, Time at last detection). Change the
+// field names (defined in the first four lines of code) to match your own specific protocol.
 //
 // Recommended Settings:
 //      Repeat Interval: 30 seconds
@@ -28,7 +29,7 @@
 //
 
 
-// Field and sheet names
+// Field and sheet names. Change these to match the appropriate fields in your protocol.
 var detectionSheetName = "4 - RPS Visual Detection";
 var cpaTimeField = "Sighting time at CPA to Active Source";
 var firstTimeDetectionField = "Time at first detection";

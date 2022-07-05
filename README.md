@@ -13,6 +13,7 @@ Feel free to include additional comments about usage, gotchas, data schemas this
 Do put the year and copyright holder in there. DO NOT put identifiable info (email, phone, etc.) in there. This is a public repo no doubt scanned by zillions of data harvester bots.
 
 # MIT License Template
+```csharp
     // MIT License
     //
     // Copyright <YEAR> <COPYRIGHT HOLDER>
@@ -30,10 +31,10 @@ Do put the year and copyright holder in there. DO NOT put identifiable info (ema
     // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
     // SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     //
-
+```
 # Script Support
 Currently, the following functions are available for scripts (access to entry sheet data, and watchdog firing/clearing). We will be adding (much!) more functionality over time. Let us know what features you'd like to have access to or if we can improve the current API in any way.
-
+```csharp
 	/// <summary>
 	/// Script support for Data items.
 	/// </summary>
@@ -105,3 +106,4 @@ Currently, the following functions are available for scripts (access to entry sh
 		/// <param name="error">Error text displayed to user when they click on Concern</param>
 		public static void BarkAtSheetData(string watchdogName, string watchdogDescription, string error, string sheet, Guid rowId, string field);
 	}
+```

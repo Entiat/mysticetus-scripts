@@ -2,15 +2,15 @@
 
 This repo contains scripts for use in the Mysticetus app. Mysticetus introduced the ability to run user-created C# scripts in build 2022.32 (July 2022). A major update to scripting functionality was introduced in 2025.1 (January 2025) that brings APIs for scripts in line with APIs available for Mysticetus Plugins (1-1 compatibility).
 
-All scripts hosted here live under the MIT license - you can use these for anything, anywhere, anytime, anyhow. All the disclaimers in the license apply, of course. These scripts are not guaranteed or warrantied to be useful for anything. Like all MIT-licensed software, they may have bugs, you may lose data, they may crash apps or crash your computer, they may cause heartbreak and you may need therapy, and that's all on you. Use at your own risk.
+All scripts hosted here live under the MIT license - you can use these for anything, anywhere, anytime, anyhow. All the disclaimers in the license apply, of course. These scripts are not guaranteed or warrantied to be useful for anything, at all, ever. Like all MIT-licensed software, they may have bugs, you may lose data, they may crash apps or crash your computer, they may cause heartbreak and you may need therapy, the therapist may sleep with your crush and your crush may hate you forever. That's all on you. Use these scripts at your own risk.
 
 # Script Submission
 
-Submit a PR with your script. It must contain the MIT License in the header as a C# comment. A template is provided below. By submitting your script you are agreeing to the license - anyone at all can use your script for anything, modify it, resell it, yell at it, write a song about it and earn royalties from record companies - whatever they want (as long as they preserve the MIT license with it).
+Submit a PR with your script. It must contain the MIT License in the header as a C# comment. A template is provided below. By submitting your script you are agreeing to the license - anyone at all can use your script for anything, modify it, resell it, yell at it, write a song about it and earn a spot in the Rock Music Hall of Fame - whatever they want (as long as they preserve the MIT license with it).
 
 Feel free to include additional comments about usage, gotchas, data schemas this works with, etc.
 
-Do put the year and copyright holder in there. DO NOT put identifiable info (email, phone, etc.) in there. This is a public repo no doubt scanned by zillions of data harvester bots.
+Please include the year and copyright holder in there. DO NOT put identifiable info (email, phone, etc.) in there. This is a public repo no doubt scanned by zillions of data harvester bots.
 
 # MIT License Template
 ```csharp

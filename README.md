@@ -6,7 +6,7 @@ All scripts hosted here live under the MIT license - you can use these for anyth
 
 # Script Submission
 
-Submit a PR with your script. It must contain the MIT License in the header as a C# comment. A template is provided below. By submitting your script you are agreeing to the license - anyone at all can use your script for anything, modify it, resell it, yell at it, write a song about it and earn a spot in the Rock Music Hall of Fame - whatever they want (as long as they preserve the MIT license with it).
+Submit a PR with your script. It must contain the MIT License in the header as a C# comment. A template is provided below. By submitting your script you are agreeing to the license - anyone at all can use your script for anything, modify it, resell it, yell at it, write a song about it and earn a spot in the Rock and Roll Hall of Fame - whatever they want (as long as they preserve the MIT license with it).
 
 Feel free to include additional comments about usage, gotchas, data schemas this works with, etc.
 

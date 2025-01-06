@@ -1,6 +1,6 @@
 # mysticetus-scripts
 
-This repo contains scripts for use in the Mysticetus app. Mysticetus introduced the ability to run user-created C# scripts in build 2022.32 (July 2022).
+This repo contains scripts for use in the Mysticetus app. Mysticetus introduced the ability to run user-created C# scripts in build 2022.32 (July 2022). A major update to scripting functionality was introduced in 2025.1 (January 2025) that brings APIs for scripts in line with APIs available for Mysticetus Plugins (1-1 compatibility).
 
 All scripts hosted here live under the MIT license - you can use these for anything, anywhere, anytime, anyhow. All the disclaimers in the license apply, of course. These scripts are not guaranteed or warrantied to be useful for anything. Like all MIT-licensed software, they may have bugs, you may lose data, they may crash apps or crash your computer, they may cause heartbreak and you may need therapy, and that's all on you. Use at your own risk.
 

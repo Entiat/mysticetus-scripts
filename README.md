@@ -33,7 +33,7 @@ Please include the year and copyright holder in there. DO NOT put identifiable i
     //
 ```
 # Script Support
-Currently, the following functions are available for scripts. We will be adding more functionality over time. Let us know what features you'd like to have access to or if we can improve the current API in any way.
+Currently, the following Mysticetus functions are available for scripts. These intentionally mirror APIs available to Mysticetus plugins (which are Windows assemblies intended to be more complex than scripts). We will be adding more functionality over time. Let us know what features you'd like to have access to or if we can improve the current API in any way.
 ```csharp
 #region Data
 /// <summary>
